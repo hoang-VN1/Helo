@@ -1,0 +1,20 @@
+{
+  "name": "ninjahub-obfuscator",
+  "version": "4.0.0",
+  "description": "Ninja Hub Discord Lua obfuscation bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup": "node setup-env.js",
+    "check": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "form-data": "^4.0.1"
+  }
+}

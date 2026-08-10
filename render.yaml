@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: ninja-hub
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        value: "1390532560794292315"
+      - key: DEFAULT_GUILD_ID
+        value: "1536149700045049956"
+      - key: PREMIUM_ROLE_ID
+        value: "1536154307290730527"
+      - key: OBF_API_URL
+        value: "https://luacrack.site/"
+      - key: OBF_API_TOKEN
+        sync: false
+      - key: MAX_FILE_BYTES
+        value: "2097152"
+      - key: PREFIX
+        value: "."
